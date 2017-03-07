@@ -1,0 +1,32 @@
+{
+    "name": "cpsl",
+    "displayName": "CPSL",
+    "description": "This extension aims to provide syntax highlighting for USU's CPSL.",
+    "version": "0.0.1",
+    "publisher": "dhoman01",
+    "engines": {
+        "vscode": "^1.10.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "cpsl",
+            "aliases": ["CPSL", "cpsl"],
+            "extensions": [".cpsl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "cpsl",
+            "scopeName": "source.cpsl",
+            "path": "./syntaxes/cpsl.tmLanguage.json"
+        }],
+        "snippets": [
+            {
+                "language": "cpsl",
+                "path": "./snippets/cpsl.json"
+            }
+        ]
+    }
+}

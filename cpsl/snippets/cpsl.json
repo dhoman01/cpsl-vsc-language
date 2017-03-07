@@ -1,0 +1,48 @@
+{
+    "For Loop": {
+        "prefix": "for",
+        "body": [
+            "for ${1:index} := ${2:0} ${3:to} ${4:10} do",
+            "\t$0",
+            "end;"
+        ],
+        "description": "For Loop (NOTE: Is inclusive)"
+    },
+    "While Loop": {
+        "prefix": "while",
+        "body": [
+            "while( ${1:index} ${2:<} ${3:10}) do",
+            "\t$0",
+            "end;"
+        ],
+        "description": "While Loop"
+    },
+    "Repeat Loop": {
+        "prefix": "repeat",
+        "body": [
+            "repeat",
+            "\t$1",
+            "until $0;"
+        ],
+        "description": "Repeat Loop"
+    },
+    "If Statement": {
+        "prefix": "if",
+        "body": [
+            "if ${1:expression} then",
+            "\t$2",
+            "else",
+            "\t$0",
+            "end;"
+        ],
+        "description": "If/Else Statement"
+    },
+    "Elseif Statement": {
+        "prefix": "elseif",
+        "body": [
+            "elseif ${1:expression} then",
+            "\t$0"
+        ],
+        "description": "ElseIf Statement"
+    }
+}
